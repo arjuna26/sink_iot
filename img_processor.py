@@ -14,6 +14,14 @@ os.makedirs(img_dir, exist_ok=True)
 # Initialize webcam (0 is the default camera)
 cap = cv2.VideoCapture(0)
 
+# set res
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
+
+actual_width = cap.get(cv2.CAP_PROP_FRAME_WIDTH)
+actual_height = cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
+print(f"Resolution set to: {actual_width}x{actual_height}")
+
 if not cap.isOpened():
     print("Error: Could not open webcam.")
     exit()
