@@ -9,9 +9,6 @@ next, this image has to be stored somewhere on the cloud so we can access it to 
 \
 the captured notes will appear on our vite + react UI. 
 
-### Project block diagram
-
-![block](img/block_diagram.drawio.png)
 
 ---
 
